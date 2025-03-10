@@ -14,7 +14,7 @@ BLAKE_SRC = blake/blake3.c \
 # TABLE_SRC = src/table_gen.c $(BLAKE_SRC)
 
 # Sources for save_table
-SAVE_SRC = src/test.c src/save_table.c src/table_gen.c src/sort_table.c $(BLAKE_SRC)
+SAVE_SRC = src/test.c src/table_io.c src/table_gen.c src/sort_table.c $(BLAKE_SRC)
 
 # Targets
 # TABLE_TARGET = table_gen

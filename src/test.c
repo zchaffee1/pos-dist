@@ -1,6 +1,6 @@
 #include "table_gen.h"
 #include "sort_table.h"
-#include "save_table.h"
+#include "table_io.h"
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
@@ -89,6 +89,10 @@ int main() {
   free(ti.data);
   */
 
-  gen_range(14, 29, 5, 32);
+//  gen_range(14, 29, 5, 32);
+
+  TableInfo ti;
+  load_table(&ti, "pospace_k29_h32_sorted.bin");
+  print_table(&ti, 10);
   return 0;
 }
