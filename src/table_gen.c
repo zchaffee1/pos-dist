@@ -45,7 +45,7 @@ void gen_info(TableInfo *ti, size_t table_size, size_t hash_size)
   ti->data = malloc(num_elements * (offsetof(NonceHashPair, hash) + ti->hash_size));
 }
 
-void gen_table(TableInfo *ti, size_t table_size, size_t hash_size) 
+void gen_table(TableInfo *ti, size_t table_size, size_t hash_size)
 {
   gen_info(ti, table_size, hash_size);
   gen_data(ti);
